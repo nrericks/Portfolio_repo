@@ -22,16 +22,22 @@ Bootstrap Variables Override
 /********************************
 Global Styles and UI Components
 **********************************/
+/*header {
+  background-color: var(--bs-primary);
+}*/
+
 body {
-    font-family: var(--bs-font-sans-serif);
+    background-color: var(--bs-primarydark);
+  font-family: var(--bs-font-sans-serif);
+  color: black;
 }
 .navbar {
     /* Optional: Make the navbar background transparent */
-    background-color: transparent;
+    background-color: var(--bs-primary);
 
-    /* Optional: Move the navbar is positioned over the hero */
-    position: absolute;
+    border-color: var(--bs-primary);
 
+    color: var(--secondary-colordark);
     /* Optional: Stretch the navbar across the full width */
     width: 100%;
 
@@ -39,6 +45,19 @@ body {
     padding: 1rem;
 }
 
+.navbar-brand {
+    /* Optional: Change the font size of the navbar brand */
+    font-size: 1.5rem;
+    /* Optional: Change the font weight of the navbar brand */
+    font-weight: 900;
+    /* Optional: Change the color of the navbar brand */
+    color: black; 
+}
+
+.navbar-brand:hover {
+    /* Optional: Change the color of the navbar brand on hover */
+    color: var(--secondary-color);
+}
 footer {
     /* Change footer background color */
     background-color: var(--bs-primary);
@@ -52,6 +71,24 @@ footer .footer-social {
     /* Optional: Change size of footer icon */
     width:24px;
     margin:.5rem
+}
+
+.card {
+    background-color: var(--bs-primary);
+    border: none;
+    border-radius: 16px;
+}
+
+.btn-navbar {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-colordark);
+    color: var--secondary-color;
+}
+
+.btn-navbar:hover {
+    background-color: var(--secondary-colordark);
+    border-color: var(--secondary-colordark);
+    color: var(--secondary-colorlight);
 }
 
 .btn-primary {
@@ -85,6 +122,9 @@ h2 {
     font-size: 2rem;
 }
 
+.text {
+   color: var(--bs-primarylight);
+}
 .display-1 {
     /* Optional: Customizes display-1 style based on my Figma UI kit */
     font-weight: 700;
